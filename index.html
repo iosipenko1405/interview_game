@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Game</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<section class="section-control">
+				<div class="block-description">
+					Please select the number of steps and click button to start
+				</div>
+				<form onsubmit="event.preventDefault();">
+					<div class="block-steps">
+						<select class="steps-select">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+						</select>
+					</div>
+					<div class="block-buttons">
+						<button class="btn-start">Start</button>
+						<button class="btn-reset hidden">Reset</button>
+					</div>
+				</form>
+			</section>
+			<section class="section-game">
+				<div class="col">
+					<table id="task-box">
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+				</div>
+				<div class="col">
+					<table id="repeat-box">
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+				</div>
+			</section>
+		</div>
+
+		<section class="section-congrats">
+			<div class="title">Congratulations</div>
+			<div class="text">
+				You are a winner!
+			</div>
+		</section>
+
+    <script src="./dist/build.js"></script>
+	</body>
+</html>

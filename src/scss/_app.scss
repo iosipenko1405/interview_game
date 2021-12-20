@@ -1,0 +1,33 @@
+body {
+  font-family: 'Lemon-Jelly', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+  position: relative;
+  min-height: 100vh;
+  margin: 0;
+  background: url("../images/body.png") repeat-x center bottom;
+}
+
+.disabled {
+  opacity: 0.65;
+  pointer-events: none;
+  cursor: default;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: all, 0.15s linear;
+}
+
+.wrapper {
+  margin: auto;
+  width: 100%;
+  max-width: 100%;
+  padding: 0 0 25px;
+}
+
+
+
+
+

@@ -1,0 +1,77 @@
+$green-color: #608012;
+$green-light-color: #bdd840;
+$green-dark-color: #3c4c14;
+$blue-color: #085764;
+$red-color: #640808;
+$black-color: #000;
+$white-color: #FFF;
+
+
+//CSS Arrow
+@mixin arrow($color, $rotate, $padding: 2px, $borderWidth: 0 1px 1px 0) {
+  border: solid $color;
+  border-width: $borderWidth;
+  display: inline-block;
+  padding: $padding;
+  transform: rotate($rotate);
+}
+
+
+@keyframes title {
+  0% {
+    font-size: 50px;
+    opacity: 0;
+    margin-bottom: -80px;
+  }
+  30% {
+    margin-bottom: -80px;
+    opacity: 0.6;
+  }
+  55% {
+    opacity: 1;
+  }
+  65% {
+    letter-spacing: 25px;
+    margin-bottom: -80px;
+  }
+  100% {
+    margin-bottom: 0;
+  }
+}
+
+@keyframes titleMobile {
+  0% {
+    font-size: 25px;
+    opacity: 0;
+    margin-bottom: -60px;
+  }
+  30% {
+    margin-bottom: -60px;
+    opacity: 0.6;
+  }
+  55% {
+    opacity: 1;
+  }
+  65% {
+    letter-spacing: 6px;
+    margin-bottom: -60px;
+  }
+  100% {
+    margin-bottom: 0;
+  }
+}
+
+@keyframes text {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.35;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,57 @@
+.section-game {
+  display: flex;
+  width: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+
+  .col {
+    max-width: 550px;
+    width: 100%;
+    border: 4px solid $green-dark-color;
+    border-radius: 10px;
+    overflow: hidden;
+    background: $green-light-color;
+    padding: 10px;
+    margin: 0 0 10px;
+    box-sizing: border-box;
+    margin: 0 15px;
+  }
+
+  table {
+    width: 100%;
+    background: white;
+
+    &.disabled {
+      opacity: 1;
+    }
+
+    td {
+      border: 2px solid $green-dark-color;
+      width: 25%;
+      height: 50px;
+      font-size: 0;
+      line-height: 0;
+      transition: background, .15s linear;
+
+      &.shine {
+        background: $blue-color;
+        transition: background, .15s linear;
+      }
+
+      &.error {
+        background: $red-color;
+        transition: background, .15s linear;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+
+    .col {
+      margin: 0 0 15px;
+    }
+  }
+}
